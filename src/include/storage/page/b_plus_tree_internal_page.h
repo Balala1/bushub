@@ -57,6 +57,8 @@ class BPlusTreeInternalPage : public BPlusTreePage {
   void MoveLastToFrontOf(BPlusTreeInternalPage *recipient, const KeyType &middle_key,
                          BufferPoolManager *buffer_pool_manager);
 
+  int InsertAt(int index, const KeyType &new_key, const ValueType &new_value);
+
  private:
   void CopyNFrom(MappingType *items, int size, BufferPoolManager *buffer_pool_manager);
   void CopyLastFrom(const MappingType &pair, BufferPoolManager *buffer_pool_manager);

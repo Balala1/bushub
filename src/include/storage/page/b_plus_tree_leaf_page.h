@@ -63,6 +63,9 @@ class BPlusTreeLeafPage : public BPlusTreePage {
   void MoveFirstToEndOf(BPlusTreeLeafPage *recipient);
   void MoveLastToFrontOf(BPlusTreeLeafPage *recipient);
 
+  int InsertAt(int index, const KeyType &new_key, const ValueType &new_value);
+  int KeyWhere(const KeyType &key, const KeyComparator &comparator) const;
+
  private:
   void CopyNFrom(MappingType *items, int size);
   void CopyLastFrom(const MappingType &item);

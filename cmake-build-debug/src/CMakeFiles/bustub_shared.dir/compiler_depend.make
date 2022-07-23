@@ -197,6 +197,8 @@ src/CMakeFiles/bustub_shared.dir/buffer/buffer_pool_manager_instance.cpp.o: ../s
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -654,6 +656,10 @@ src/CMakeFiles/bustub_shared.dir/buffer/lru_replacer.cpp.o: ../src/buffer/lru_re
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h
 
@@ -853,6 +859,8 @@ src/CMakeFiles/bustub_shared.dir/buffer/parallel_buffer_pool_manager.cpp.o: ../s
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -1611,6 +1619,8 @@ src/CMakeFiles/bustub_shared.dir/catalog/table_generator.cpp.o: ../src/catalog/t
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -1693,8 +1703,6 @@ src/CMakeFiles/bustub_shared.dir/catalog/table_generator.cpp.o: ../src/catalog/t
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -2620,12 +2628,12 @@ src/CMakeFiles/bustub_shared.dir/concurrency/transaction_manager.cpp.o: ../src/c
   ../src/include/catalog/catalog.h \
   ../src/include/buffer/buffer_pool_manager.h \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/storage/page/hash_table_bucket_page.h \
@@ -2892,6 +2900,8 @@ src/CMakeFiles/bustub_shared.dir/container/hash/extendible_hash_table.cpp.o: ../
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/recovery/log_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
@@ -3179,6 +3189,8 @@ src/CMakeFiles/bustub_shared.dir/container/hash/linear_probe_hash_table.cpp.o: .
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/recovery/log_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
@@ -3473,6 +3485,8 @@ src/CMakeFiles/bustub_shared.dir/execution/aggregation_executor.cpp.o: ../src/ex
   ../src/include/buffer/buffer_pool_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -3495,8 +3509,6 @@ src/CMakeFiles/bustub_shared.dir/execution/aggregation_executor.cpp.o: ../src/ex
   ../src/include/storage/page/page.h \
   ../src/include/common/rwlatch.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -3725,6 +3737,8 @@ src/CMakeFiles/bustub_shared.dir/execution/delete_executor.cpp.o: ../src/executi
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -3807,8 +3821,6 @@ src/CMakeFiles/bustub_shared.dir/execution/delete_executor.cpp.o: ../src/executi
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -4030,6 +4042,8 @@ src/CMakeFiles/bustub_shared.dir/execution/distinct_executor.cpp.o: ../src/execu
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -4112,8 +4126,6 @@ src/CMakeFiles/bustub_shared.dir/execution/distinct_executor.cpp.o: ../src/execu
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -4333,6 +4345,8 @@ src/CMakeFiles/bustub_shared.dir/execution/executor_factory.cpp.o: ../src/execut
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -4415,8 +4429,6 @@ src/CMakeFiles/bustub_shared.dir/execution/executor_factory.cpp.o: ../src/execut
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -4666,6 +4678,8 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: ../src/exec
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -4748,8 +4762,6 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: ../src/exec
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -5020,6 +5032,8 @@ src/CMakeFiles/bustub_shared.dir/execution/index_scan_executor.cpp.o: ../src/exe
   ../src/include/buffer/buffer_pool_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/recovery/log_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
@@ -5051,8 +5065,6 @@ src/CMakeFiles/bustub_shared.dir/execution/index_scan_executor.cpp.o: ../src/exe
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -5273,6 +5285,8 @@ src/CMakeFiles/bustub_shared.dir/execution/insert_executor.cpp.o: ../src/executi
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -5355,8 +5369,6 @@ src/CMakeFiles/bustub_shared.dir/execution/insert_executor.cpp.o: ../src/executi
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -5578,6 +5590,8 @@ src/CMakeFiles/bustub_shared.dir/execution/limit_executor.cpp.o: ../src/executio
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -5660,8 +5674,6 @@ src/CMakeFiles/bustub_shared.dir/execution/limit_executor.cpp.o: ../src/executio
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -5880,6 +5892,8 @@ src/CMakeFiles/bustub_shared.dir/execution/nested_index_join_executor.cpp.o: ../
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -5962,8 +5976,6 @@ src/CMakeFiles/bustub_shared.dir/execution/nested_index_join_executor.cpp.o: ../
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -6184,6 +6196,8 @@ src/CMakeFiles/bustub_shared.dir/execution/nested_loop_join_executor.cpp.o: ../s
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -6266,8 +6280,6 @@ src/CMakeFiles/bustub_shared.dir/execution/nested_loop_join_executor.cpp.o: ../s
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -6488,6 +6500,8 @@ src/CMakeFiles/bustub_shared.dir/execution/seq_scan_executor.cpp.o: ../src/execu
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -6570,8 +6584,6 @@ src/CMakeFiles/bustub_shared.dir/execution/seq_scan_executor.cpp.o: ../src/execu
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -6792,6 +6804,8 @@ src/CMakeFiles/bustub_shared.dir/execution/update_executor.cpp.o: ../src/executi
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -6874,8 +6888,6 @@ src/CMakeFiles/bustub_shared.dir/execution/update_executor.cpp.o: ../src/executi
   ../src/include/container/hash/hash_function.h \
   ../third_party/murmur3/MurmurHash3.h \
   ../src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   ../src/include/concurrency/transaction.h \
@@ -7101,6 +7113,8 @@ src/CMakeFiles/bustub_shared.dir/recovery/checkpoint_manager.cpp.o: ../src/recov
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -7645,6 +7659,8 @@ src/CMakeFiles/bustub_shared.dir/recovery/log_recovery.cpp.o: ../src/recovery/lo
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -8253,6 +8269,8 @@ src/CMakeFiles/bustub_shared.dir/storage/index/b_plus_tree.cpp.o: ../src/storage
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_map \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/recovery/log_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/future \
@@ -9044,6 +9062,8 @@ src/CMakeFiles/bustub_shared.dir/storage/index/index_iterator.cpp.o: ../src/stor
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -9669,6 +9689,8 @@ src/CMakeFiles/bustub_shared.dir/storage/page/b_plus_tree_internal_page.cpp.o: .
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -9948,6 +9970,8 @@ src/CMakeFiles/bustub_shared.dir/storage/page/b_plus_tree_leaf_page.cpp.o: ../sr
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
   ../src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/recovery/log_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
@@ -10170,6 +10194,8 @@ src/CMakeFiles/bustub_shared.dir/storage/page/b_plus_tree_page.cpp.o: ../src/sto
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -11994,6 +12020,8 @@ src/CMakeFiles/bustub_shared.dir/storage/table/table_heap.cpp.o: ../src/storage/
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -12275,6 +12303,8 @@ src/CMakeFiles/bustub_shared.dir/storage/table/table_iterator.cpp.o: ../src/stor
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   ../src/include/buffer/replacer.h \
   ../src/include/common/config.h \
   ../src/include/recovery/log_manager.h \
@@ -15482,8 +15512,6 @@ src/CMakeFiles/bustub_shared.dir/type/varlen_type.cpp.o: ../src/type/varlen_type
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_set:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree:
-
 ../src/execution/index_scan_executor.cpp:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/_types/_sigaltstack.h:
@@ -15690,13 +15718,7 @@ src/CMakeFiles/bustub_shared.dir/type/varlen_type.cpp.o: ../src/type/varlen_type
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/future:
 
-../src/execution/distinct_executor.cpp:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/stdio.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/mach/arm/_structs.h:
-
-../src/include/buffer/replacer.h:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/string.h:
 
@@ -16022,6 +16044,10 @@ src/CMakeFiles/bustub_shared.dir/type/varlen_type.cpp.o: ../src/type/varlen_type
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/_ctermid.h:
 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/mach/arm/_structs.h:
+
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sys/stdio.h:
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/arm/_limits.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/_types.h:
@@ -16149,6 +16175,10 @@ src/CMakeFiles/bustub_shared.dir/type/varlen_type.cpp.o: ../src/type/varlen_type
 ../src/include/type/integer_type.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/stdexcept:
+
+../src/execution/distinct_executor.cpp:
+
+../src/include/buffer/replacer.h:
 
 ../src/include/execution/plans/distinct_plan.h:
 
