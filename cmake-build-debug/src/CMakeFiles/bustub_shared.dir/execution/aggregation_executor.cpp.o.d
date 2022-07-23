@@ -259,6 +259,8 @@ src/CMakeFiles/bustub_shared.dir/execution/aggregation_executor.cpp.o: \
   /Users/taoyuan/CLionProjects/bushub/src/include/buffer/buffer_pool_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
   /Users/taoyuan/CLionProjects/bushub/src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   /Users/taoyuan/CLionProjects/bushub/src/include/buffer/replacer.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/common/config.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/recovery/log_manager.h \
@@ -281,8 +283,6 @@ src/CMakeFiles/bustub_shared.dir/execution/aggregation_executor.cpp.o: \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/common/rwlatch.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/extendible_hash_table_index.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
   /Users/taoyuan/CLionProjects/bushub/src/include/container/hash/extendible_hash_table.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   /Users/taoyuan/CLionProjects/bushub/src/include/concurrency/transaction.h \
