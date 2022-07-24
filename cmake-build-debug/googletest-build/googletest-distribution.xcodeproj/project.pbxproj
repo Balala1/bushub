@@ -1,0 +1,1844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0B2D018AF9D241E4B205D557 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1682BE616E74EEBBFB786F3 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				3FF9668AA0774808B8F284EB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		1623B40D72CE44228C4441B1 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0D9BF21E1874441D98B49810 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				6AFE19C5D5418FDABC586FEC /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		5DF56B2D24DF4D34926497E7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 91ED068C62494722AE572ADB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		F3EA32874F2B44A28EC91FCB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8D9CF48EA9744951B1A7B90A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4DA7A5B280FB3EC76DDE2DE7 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				B51A11A6FCA142DB9D30FDE2 /* PBXTargetDependency */,
+				79C8DFE17A3C47DE8B6D75CC /* PBXTargetDependency */,
+				4D872E845E59482995A49BE2 /* PBXTargetDependency */,
+				64866FE711B64E18AE220047 /* PBXTargetDependency */,
+				96B621DC4CF442178A144102 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00324D5723034A94A95717D5 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EA0244D3FF514219808CFA67 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */; };
+		241A1BA22B38473B9D5DA36E /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXBuildFile; fileRef = 94D95817009B4D0CAC68A776 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock_main.cc */; };
+		2DEA27D37CDB4C9F9A4AC43C /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXBuildFile; fileRef = 83F1AE4DB70B4253AC9EFC23 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc */; };
+		A37C6923B8174B05AA76AF41 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXBuildFile; fileRef = 0F55F0012AB64E15A2793C62 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock-all.cc */; };
+		C1BCFEE17D6B4B6798E5198E /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 623381920BB3479289280873 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */; };
+		D167ACC0C75548B08AF02248 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BF533FAC2FD340C296C9D553 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */; };
+		D524C53003B14635B2BC7A1A /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXBuildFile; fileRef = 9FF6EA792A464B53AA566516 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest-all.cc */; };
+		FE85AB7161E44487B94638B8 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8D82FBDD8CDC4A058844CEF5 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		76AC376C78C64491BB742AA5 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9DD7646BBC8849A3A8CCC33B /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		BF9E6322CDC14BA68D7D46C5 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		EF07DE989A6342FEA0581D14 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		08959DE69F38416EBFED5E9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08734D1870374F9898099AA7;
+			remoteInfo = gmock;
+		};
+		244612E4A0F14C18A9577236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08734D1870374F9898099AA7;
+			remoteInfo = gmock;
+		};
+		3D2706E7AA924A7287EFC87B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEB7EE709BE44317A72EC4F7;
+			remoteInfo = gmock_main;
+		};
+		41A4B1F9ACE54AEAB96EC93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1623B40D72CE44228C4441B1;
+			remoteInfo = ZERO_CHECK;
+		};
+		53DB2BDDCACF4FED8E6B3152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D3A50A06514258B816DF87;
+			remoteInfo = gtest;
+		};
+		6DA85FD82FC64DD498A9E063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C37E2195DC944A2BD33AE67;
+			remoteInfo = gtest_main;
+		};
+		75D544B2E0B94EB1BE03A727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D3A50A06514258B816DF87;
+			remoteInfo = gtest;
+		};
+		8EA78809F2264CD3AE1FF335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D3A50A06514258B816DF87;
+			remoteInfo = gtest;
+		};
+		B414CEDBC6B440CDA57A9E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D3A50A06514258B816DF87;
+			remoteInfo = gtest;
+		};
+		B9E01BC0800E4BF5A7B15F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 467701278933439A90EB363F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3EA32874F2B44A28EC91FCB;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F55F0012AB64E15A2793C62 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "googlemock/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		623381920BB3479289280873 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		83F1AE4DB70B4253AC9EFC23 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = googletest/src/gtest_main.cc; sourceTree = SOURCE_ROOT; };
+		8D82FBDD8CDC4A058844CEF5 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googletest/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		94D95817009B4D0CAC68A776 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmock_main.cc; path = googlemock/src/gmock_main.cc; sourceTree = SOURCE_ROOT; };
+		9FF6EA792A464B53AA566516 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "googletest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		B1A727EEB2354CCC9BFAE64A /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BF533FAC2FD340C296C9D553 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C0C838502E4741A7814940E2 /* gtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libgtest.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89DDE6C8F8F41CD8E94C908 /* gmock */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libgmock.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E977F5C11FAC47CEAE225BFD /* gtest_main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libgtest_main.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0244D3FF514219808CFA67 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = googlemock/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F4237D3B49F94822814CCD79 /* gmock_main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libgmock_main.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		912A9D401A944AF199D101B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		935452A88B0A4FDE9B6647CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C907376225F2458284A4D2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17B627ACEA243549342CCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27A112400339463CA5780A2A /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				5FC9C00F163E44DB804E4BB3 /* Source Files */,
+				8D82FBDD8CDC4A058844CEF5 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		4B1058E8E0874A83B31B34C8 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8D17340815E44721B1047738 /* CMake Rules */,
+				B1A727EEB2354CCC9BFAE64A /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5133CBD66B96476DAA8F95BD /* gmock_main */ = {
+			isa = PBXGroup;
+			children = (
+				F59C99A68510472A9490ADB9 /* Source Files */,
+				BF533FAC2FD340C296C9D553 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */,
+			);
+			name = gmock_main;
+			sourceTree = "<group>";
+		};
+		5FC9C00F163E44DB804E4BB3 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FF6EA792A464B53AA566516 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		677E8D68132F434BB446F29C /* gtest_main */ = {
+			isa = PBXGroup;
+			children = (
+				C3D745BC7D454950A8CFA22E /* Source Files */,
+				623381920BB3479289280873 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/CMakeLists.txt */,
+			);
+			name = gtest_main;
+			sourceTree = "<group>";
+		};
+		836E503826BC406C921E0DD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D17340815E44721B1047738 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9CBFEE9C8193407D976EC016 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F55F0012AB64E15A2793C62 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AEF7963008FC4885B0644F2E = {
+			isa = PBXGroup;
+			children = (
+				4B1058E8E0874A83B31B34C8 /* ALL_BUILD */,
+				D33A2BD482F94FEFB5C9C3CB /* gmock */,
+				5133CBD66B96476DAA8F95BD /* gmock_main */,
+				27A112400339463CA5780A2A /* gtest */,
+				677E8D68132F434BB446F29C /* gtest_main */,
+				CFC5B7620564458FAA6EBBDF /* Products */,
+				836E503826BC406C921E0DD9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D745BC7D454950A8CFA22E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				83F1AE4DB70B4253AC9EFC23 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CFC5B7620564458FAA6EBBDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D89DDE6C8F8F41CD8E94C908 /* gmock */,
+				F4237D3B49F94822814CCD79 /* gmock_main */,
+				C0C838502E4741A7814940E2 /* gtest */,
+				E977F5C11FAC47CEAE225BFD /* gtest_main */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D33A2BD482F94FEFB5C9C3CB /* gmock */ = {
+			isa = PBXGroup;
+			children = (
+				9CBFEE9C8193407D976EC016 /* Source Files */,
+				EA0244D3FF514219808CFA67 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/CMakeLists.txt */,
+			);
+			name = gmock;
+			sourceTree = "<group>";
+		};
+		F59C99A68510472A9490ADB9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				94D95817009B4D0CAC68A776 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08734D1870374F9898099AA7 /* gmock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 405FA1EA23594D0BB8CE117A /* Build configuration list for PBXNativeTarget "gmock" */;
+			buildPhases = (
+				5B2C1B2001654868A9A3688C /* Sources */,
+				C907376225F2458284A4D2BB /* Frameworks */,
+				07B7E390659DE16C4ABC05A0 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70C73F436F704D958C366E3B /* PBXTargetDependency */,
+			);
+			name = gmock;
+			productName = gmock;
+			productReference = D89DDE6C8F8F41CD8E94C908 /* gmock */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		0C37E2195DC944A2BD33AE67 /* gtest_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0948AEDEC5A64064961695F1 /* Build configuration list for PBXNativeTarget "gtest_main" */;
+			buildPhases = (
+				837B0F75501D4454B0D5F720 /* Sources */,
+				912A9D401A944AF199D101B0 /* Frameworks */,
+				60EE2700B1C23E24F325367B /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703A66FBF8BC477BA6715BC5 /* PBXTargetDependency */,
+			);
+			name = gtest_main;
+			productName = gtest_main;
+			productReference = E977F5C11FAC47CEAE225BFD /* gtest_main */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		56D3A50A06514258B816DF87 /* gtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6FA97801358434A97D76BCD /* Build configuration list for PBXNativeTarget "gtest" */;
+			buildPhases = (
+				D3D3EDCF4A4B421287C6EEFD /* Sources */,
+				E17B627ACEA243549342CCEB /* Frameworks */,
+				44E190E550C430A98624EE2D /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gtest;
+			productName = gtest;
+			productReference = C0C838502E4741A7814940E2 /* gtest */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		FEB7EE709BE44317A72EC4F7 /* gmock_main */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5A7730DA3C48E19722DBE6 /* Build configuration list for PBXNativeTarget "gmock_main" */;
+			buildPhases = (
+				AF43F23415A24FFBBBFB4AA0 /* Sources */,
+				935452A88B0A4FDE9B6647CD /* Frameworks */,
+				F49D62E1BA2332AEEF7B542E /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6234EB630ADB4ACCBF8A9928 /* PBXTargetDependency */,
+				0D8C1470462546EF878BD9BA /* PBXTargetDependency */,
+			);
+			name = gmock_main;
+			productName = gmock_main;
+			productReference = F4237D3B49F94822814CCD79 /* gmock_main */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		467701278933439A90EB363F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1310;
+			};
+			buildConfigurationList = EB1FB59DB6DD4054AA0B573D /* Build configuration list for PBXProject "googletest-distribution" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EF07DE989A6342FEA0581D14 /* Debug */,
+				76AC376C78C64491BB742AA5 /* Release */,
+				BF9E6322CDC14BA68D7D46C5 /* MinSizeRel */,
+				9DD7646BBC8849A3A8CCC33B /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = AEF7963008FC4885B0644F2E;
+			projectDirPath = "../googletest-src";
+			projectRoot = "";
+			targets = (
+				F3EA32874F2B44A28EC91FCB /* ALL_BUILD */,
+				5DF56B2D24DF4D34926497E7 /* RUN_TESTS */,
+				1623B40D72CE44228C4441B1 /* ZERO_CHECK */,
+				08734D1870374F9898099AA7 /* gmock */,
+				FEB7EE709BE44317A72EC4F7 /* gmock_main */,
+				56D3A50A06514258B816DF87 /* gtest */,
+				0C37E2195DC944A2BD33AE67 /* gtest_main */,
+				0B2D018AF9D241E4B205D557 /* install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		07B7E390659DE16C4ABC05A0 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		44E190E550C430A98624EE2D /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		4DA7A5B280FB3EC76DDE2DE7 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		60EE2700B1C23E24F325367B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest_main.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		6AFE19C5D5418FDABC586FEC /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  make -f /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  make -f /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  make -f /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  make -f /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F49D62E1BA2332AEEF7B542E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock_main.dylib
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock
+  /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_symlink_library /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock_main.1.12.1.dylib /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock_main.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B2C1B2001654868A9A3688C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A37C6923B8174B05AA76AF41 /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837B0F75501D4454B0D5F720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DEA27D37CDB4C9F9A4AC43C /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF43F23415A24FFBBBFB4AA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241A1BA22B38473B9D5DA36E /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/src/gmock_main.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3D3EDCF4A4B421287C6EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D524C53003B14635B2BC7A1A /* /Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/src/gtest-all.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D8C1470462546EF878BD9BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D3A50A06514258B816DF87 /* gtest */;
+			targetProxy = 75D544B2E0B94EB1BE03A727 /* PBXContainerItemProxy */;
+		};
+		3FF9668AA0774808B8F284EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3EA32874F2B44A28EC91FCB /* ALL_BUILD */;
+			targetProxy = B9E01BC0800E4BF5A7B15F6A /* PBXContainerItemProxy */;
+		};
+		4D872E845E59482995A49BE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEB7EE709BE44317A72EC4F7 /* gmock_main */;
+			targetProxy = 3D2706E7AA924A7287EFC87B /* PBXContainerItemProxy */;
+		};
+		6234EB630ADB4ACCBF8A9928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08734D1870374F9898099AA7 /* gmock */;
+			targetProxy = 08959DE69F38416EBFED5E9D /* PBXContainerItemProxy */;
+		};
+		64866FE711B64E18AE220047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D3A50A06514258B816DF87 /* gtest */;
+			targetProxy = 53DB2BDDCACF4FED8E6B3152 /* PBXContainerItemProxy */;
+		};
+		703A66FBF8BC477BA6715BC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D3A50A06514258B816DF87 /* gtest */;
+			targetProxy = 8EA78809F2264CD3AE1FF335 /* PBXContainerItemProxy */;
+		};
+		70C73F436F704D958C366E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D3A50A06514258B816DF87 /* gtest */;
+			targetProxy = B414CEDBC6B440CDA57A9E4A /* PBXContainerItemProxy */;
+		};
+		79C8DFE17A3C47DE8B6D75CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08734D1870374F9898099AA7 /* gmock */;
+			targetProxy = 244612E4A0F14C18A9577236 /* PBXContainerItemProxy */;
+		};
+		96B621DC4CF442178A144102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C37E2195DC944A2BD33AE67 /* gtest_main */;
+			targetProxy = 6DA85FD82FC64DD498A9E063 /* PBXContainerItemProxy */;
+		};
+		B51A11A6FCA142DB9D30FDE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1623B40D72CE44228C4441B1 /* ZERO_CHECK */;
+			targetProxy = 41A4B1F9ACE54AEAB96EC93E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06B629B3CF394CF091A3C221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0DA64294585C4674BF8C2E3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgmock.1.12.1.dylib","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		12B2F55A75054592A0208A0A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		17B05B7B59B54F68A1FFED00 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1EFB4C58AB3B4B7785033225 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		22107154906E460D8EA4ADE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		22E0F0991DA345D89A252C6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		22FED3C0C54D4312B2D48B59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		234308DF60B143DC8DA875BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		2A53B4C46CF840A189ACBCFB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgmock.1.12.1.dylib","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2E1CDC443E284B109D94DF2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3B9710AEFECA49A0B723D8C6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4B75E4BCA2A74568BAA12328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/build";
+			};
+			name = Debug;
+		};
+		4E9CD024BBEF4941A24190A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4F341C9DF7894C39B9997901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/build";
+			};
+			name = Release;
+		};
+		531C9520B5E3461AB435C6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		63F5B553AF6745E59D8D88B3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6B90C70FBF054670BC667394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgmock.1.12.1.dylib","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Debug/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		741F1386722B4B398CD10853 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7A5306BC28AE4672AD18A879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7B1134E72D3049A6A8E397C6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7CD6C5EC1A7E4695B2C469AF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7EB1552E75EE4E90AB0A37D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9063CED5F6A44980A267A859 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9800E9749DE742BE84CD44F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		987DDC079B52443B83007B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9A25A04803B145E29721C6F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/Release/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9BF2D46416A546A98E699967 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/build";
+			};
+			name = MinSizeRel;
+		};
+		A347DA205C4146FB98D8508C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A8C6C2F90016455B9FC72D52 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		ABCF0DE44EC34052ADC49350 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk;
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		BF83F8BC0B8944CD875CE829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CC89CDE712AE47A88CE268E2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gmock_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgmock.1.12.1.dylib","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gmock_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googlemock";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googlemock","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DF712977D8064B4AAA15234D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/RelWithDebInfo/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F4938F1F771246DD97DE7A16 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = 1.12.1;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",gtest_main_EXPORTS,"'GTEST_CREATE_SHARED_LIBRARY=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel","$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC  -DGTEST_HAS_PTHREAD=1   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -dynamiclib -Wl,-headerpad_max_install_names","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/lib/MinSizeRel/libgtest.1.12.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gtest_main.1.12.1;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build/googletest";
+				SYSTEM_HEADER_SEARCH_PATHS = ("/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest/include","/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-src/googletest","$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F628A78CC7D44B6A99F99E6B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/taoyuan/CLionProjects/bushub/cmake-build-debug/googletest-build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0948AEDEC5A64064961695F1 /* Build configuration list for PBXNativeTarget "gtest_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E9CD024BBEF4941A24190A1 /* Debug */,
+				9A25A04803B145E29721C6F9 /* Release */,
+				F4938F1F771246DD97DE7A16 /* MinSizeRel */,
+				DF712977D8064B4AAA15234D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0D9BF21E1874441D98B49810 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5306BC28AE4672AD18A879 /* Debug */,
+				22107154906E460D8EA4ADE1 /* Release */,
+				63F5B553AF6745E59D8D88B3 /* MinSizeRel */,
+				1EFB4C58AB3B4B7785033225 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		405FA1EA23594D0BB8CE117A /* Build configuration list for PBXNativeTarget "gmock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22FED3C0C54D4312B2D48B59 /* Debug */,
+				987DDC079B52443B83007B86 /* Release */,
+				7CD6C5EC1A7E4695B2C469AF /* MinSizeRel */,
+				9063CED5F6A44980A267A859 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8D9CF48EA9744951B1A7B90A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E0F0991DA345D89A252C6B /* Debug */,
+				06B629B3CF394CF091A3C221 /* Release */,
+				A347DA205C4146FB98D8508C /* MinSizeRel */,
+				12B2F55A75054592A0208A0A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		91ED068C62494722AE572ADB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E1CDC443E284B109D94DF2D /* Debug */,
+				234308DF60B143DC8DA875BE /* Release */,
+				F628A78CC7D44B6A99F99E6B /* MinSizeRel */,
+				3B9710AEFECA49A0B723D8C6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DE5A7730DA3C48E19722DBE6 /* Build configuration list for PBXNativeTarget "gmock_main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B90C70FBF054670BC667394 /* Debug */,
+				0DA64294585C4674BF8C2E3F /* Release */,
+				2A53B4C46CF840A189ACBCFB /* MinSizeRel */,
+				CC89CDE712AE47A88CE268E2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB1FB59DB6DD4054AA0B573D /* Build configuration list for PBXProject "googletest-distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E4BCA2A74568BAA12328 /* Debug */,
+				4F341C9DF7894C39B9997901 /* Release */,
+				9BF2D46416A546A98E699967 /* MinSizeRel */,
+				ABCF0DE44EC34052ADC49350 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1682BE616E74EEBBFB786F3 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF83F8BC0B8944CD875CE829 /* Debug */,
+				9800E9749DE742BE84CD44F0 /* Release */,
+				741F1386722B4B398CD10853 /* MinSizeRel */,
+				17B05B7B59B54F68A1FFED00 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6FA97801358434A97D76BCD /* Build configuration list for PBXNativeTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				531C9520B5E3461AB435C6CA /* Debug */,
+				7EB1552E75EE4E90AB0A37D2 /* Release */,
+				A8C6C2F90016455B9FC72D52 /* MinSizeRel */,
+				7B1134E72D3049A6A8E397C6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 467701278933439A90EB363F /* Project object */;
+}

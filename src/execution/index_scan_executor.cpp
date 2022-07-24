@@ -10,13 +10,36 @@
 //
 //===----------------------------------------------------------------------===//
 #include "execution/executors/index_scan_executor.h"
+#include "storage/index/b_plus_tree_index.h"
 
 namespace bustub {
 IndexScanExecutor::IndexScanExecutor(ExecutorContext *exec_ctx, const IndexScanPlanNode *plan)
-    : AbstractExecutor(exec_ctx) {}
+    : AbstractExecutor(exec_ctx) {
+  plan_ = plan;
+}
 
-void IndexScanExecutor::Init() {}
+void IndexScanExecutor::Init() {
+  auto index = exec_ctx_->GetCatalog()->GetIndex(plan_->GetIndexOid());
+  b_index_ = reinterpret_cast<BPlusTreeIndex<GenericKey<8>, RID, GenericComparator<8>> *>(index->index_.get());
+  iter_ = b_index_->GetBeginIterator();
 
-auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool { return false; }
+  table_ = exec_ctx_->GetCatalog()->GetTable(index->table_name_);
+}
 
+auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool {
+  if (iter_ == b_index_->GetEndIterator()) {
+    return false;
+  }
+
+  table_->table_->GetTuple((*iter_).second, tuple, exec_ctx_->GetTransaction());
+  if (plan_->GetPredicate() != nullptr &&
+      !plan_->GetPredicate()->Evaluate(tuple, plan_->OutputSchema()).GetAs<bool>()) {
+    ++iter_;
+    return false;
+  }
+
+  *rid = (*iter_).second;
+  ++iter_;
+  return true;
+}
 }  // namespace bustub

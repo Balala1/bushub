@@ -284,14 +284,14 @@ src/CMakeFiles/bustub_shared.dir/concurrency/transaction_manager.cpp.o: \
   /Users/taoyuan/CLionProjects/bushub/src/include/buffer/replacer.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/container/hash/hash_function.h \
   /Users/taoyuan/CLionProjects/bushub/third_party/murmur3/MurmurHash3.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/extendible_hash_table_index.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/container/hash/extendible_hash_table.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/b_plus_tree_index.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/b_plus_tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_bucket_page.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/int_comparator.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_page_defs.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_directory_page.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/index_iterator.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_leaf_page.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/generic_key.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_internal_page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/index.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/table/table_heap.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/table_page.h \
