@@ -162,22 +162,14 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/sched.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cassert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/assert.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/execution/executor_context.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_set \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__hash_table \
+  /Users/taoyuan/CLionProjects/bushub/src/include/common/util/hash_util.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/bit \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bits \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cmath \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/math.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
-  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/catalog.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__locale \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/string_view \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__string \
@@ -188,31 +180,11 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/_types/_wctrans_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_map \
-  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/buffer_pool_manager.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/mutex \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__mutex_base \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/system_error \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__errc \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cerrno \
-  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/lru_replacer.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
-  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/replacer.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/common/config.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/recovery/log_manager.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/future \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/thread \
-  /Users/taoyuan/CLionProjects/bushub/src/include/recovery/log_record.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/table/tuple.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/schema.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/column.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/common/exception.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iostream \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/ios \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__locale \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/locale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/locale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/_locale.h \
@@ -259,17 +231,46 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/bitset \
-  /Users/taoyuan/CLionProjects/bushub/src/include/type/type.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/type/type_id.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__bit_reference \
   /Users/taoyuan/CLionProjects/bushub/src/include/common/macros.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/common/rid.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/sstream \
   /Users/taoyuan/CLionProjects/bushub/src/include/type/value.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/type/limits.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cfloat \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/float.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include/float.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/float.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/type/type.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/type/type_id.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/execution/executor_context.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_set \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__hash_table \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/math.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/optional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__split_buffer \
+  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/catalog.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/unordered_map \
+  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/buffer_pool_manager.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/list \
+  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/lru_replacer.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__tree \
+  /Users/taoyuan/CLionProjects/bushub/src/include/buffer/replacer.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/common/config.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/recovery/log_manager.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/condition_variable \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/future \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/thread \
+  /Users/taoyuan/CLionProjects/bushub/src/include/recovery/log_record.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/table/tuple.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/schema.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/catalog/column.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/common/exception.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/common/rid.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/sstream \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/disk/disk_manager.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/filesystem \
@@ -280,16 +281,16 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: \
   /Users/taoyuan/CLionProjects/bushub/src/include/common/rwlatch.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/container/hash/hash_function.h \
   /Users/taoyuan/CLionProjects/bushub/third_party/murmur3/MurmurHash3.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/extendible_hash_table_index.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/container/hash/extendible_hash_table.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/b_plus_tree_index.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/b_plus_tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/queue \
   /Users/taoyuan/CLionProjects/bushub/src/include/concurrency/transaction.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/common/logger.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_bucket_page.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/int_comparator.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_page_defs.h \
-  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/hash_table_directory_page.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/index_iterator.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_leaf_page.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/generic_key.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/b_plus_tree_internal_page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/index/index.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/table/table_heap.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/table_page.h \
@@ -298,5 +299,6 @@ src/CMakeFiles/bustub_shared.dir/execution/hash_join_executor.cpp.o: \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/page/tmp_tuple_page.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/storage/table/tmp_tuple.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/execution/executors/abstract_executor.h \
+  /Users/taoyuan/CLionProjects/bushub/src/include/execution/expressions/abstract_expression.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/execution/plans/hash_join_plan.h \
   /Users/taoyuan/CLionProjects/bushub/src/include/execution/plans/abstract_plan.h
