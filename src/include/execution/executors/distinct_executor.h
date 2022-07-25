@@ -14,9 +14,11 @@
 
 #include <memory>
 #include <utility>
+#include <unordered_map>
 
 #include "execution/executors/abstract_executor.h"
 #include "execution/plans/distinct_plan.h"
+#include "execution/expressions/abstract_expression.h"
 
 namespace bustub {
 
@@ -53,5 +55,7 @@ class DistinctExecutor : public AbstractExecutor {
   const DistinctPlanNode *plan_;
   /** The child executor from which tuples are obtained */
   std::unique_ptr<AbstractExecutor> child_executor_;
+  std::unordered_map<DistinctKey, bool> map_{};
+  std::unordered_map<DistinctKey, bool>::const_iterator iter_;
 };
 }  // namespace bustub

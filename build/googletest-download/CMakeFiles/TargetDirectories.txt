@@ -1,3 +1,0 @@
-/Users/taoyuan/CLionProjects/bushub/build/googletest-download/CMakeFiles/googletest.dir
-/Users/taoyuan/CLionProjects/bushub/build/googletest-download/CMakeFiles/edit_cache.dir
-/Users/taoyuan/CLionProjects/bushub/build/googletest-download/CMakeFiles/rebuild_cache.dir
