@@ -13,6 +13,9 @@
 #include <memory>
 
 #include "execution/executors/delete_executor.h"
+#include "concurrency/transaction_manager.h"
+#include "concurrency/lock_manager.h"
+#include "concurrency/transaction.h"
 
 namespace bustub {
 
@@ -33,8 +36,19 @@ auto DeleteExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   Tuple del_tup;
   RID del_rid;
   while (child_executor_->Next(&del_tup, &del_rid)) {
+    if (exec_ctx_->GetTransaction()->IsSharedLocked(del_rid)) {
+      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), del_rid);
+    }
+    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(del_rid)) {
+      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), del_rid);
+    }
+
+    exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(del_rid, WType::DELETE,
+      Tuple{}, table_info_->table_.get()));
     table_info_->table_->MarkDelete(del_rid, exec_ctx_->GetTransaction());
     for (auto index : indexes) {
+      exec_ctx_->GetTransaction()->AppendIndexWriteRecord(IndexWriteRecord(del_rid, table_info_->oid_, WType::DELETE,
+                                                                           del_tup, Tuple{}, index->index_oid_, exec_ctx_->GetCatalog()));
       index->index_->DeleteEntry(del_tup.KeyFromTuple(table_info_->schema_, *index->index_->GetKeySchema(), index->index_->GetKeyAttrs()),
                                  del_rid, exec_ctx_->GetTransaction());
     }

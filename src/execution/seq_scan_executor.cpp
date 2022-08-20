@@ -31,6 +31,8 @@ void SeqScanExecutor::Init() {
 
 auto SeqScanExecutor::Next(Tuple *tuple, RID *rid) -> bool {
   while (iter_ != table_->table_->End()) {
+    exec_ctx_->GetLockManager()->LockShared(exec_ctx_->GetTransaction(), *iter_->GetRid());
+
     if (plan_->GetPredicate() == nullptr ||
         plan_->GetPredicate()->Evaluate(&*iter_, plan_->OutputSchema()).GetAs<bool>()) {
       *tuple = *iter_;

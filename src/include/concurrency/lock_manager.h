@@ -20,6 +20,7 @@
 #include <unordered_map>
 #include <utility>
 #include <vector>
+#include <set>
 
 #include "common/config.h"
 #include "common/rid.h"
@@ -51,15 +52,33 @@ class LockManager {
     std::condition_variable cv_;
     // txn_id of an upgrading transaction (if any)
     txn_id_t upgrading_ = INVALID_TXN_ID;
+    bool is_writing_ = false;
+    size_t share_cnt_ = 0;
   };
 
  public:
   /**
    * Creates a new lock manager configured for the deadlock prevention policy.
    */
-  LockManager() = default;
+  LockManager() {
+    enable_cycle_detection_ = true;
+    cycle_detection_thread_ = new std::thread(&LockManager::RunCycleDetection, this);
+    LOG_INFO("Cycle detection thread launched");
+  }
 
-  ~LockManager() = default;
+  ~LockManager() {
+    enable_cycle_detection_ = false;
+    cycle_detection_thread_->join();
+    delete cycle_detection_thread_;
+    LOG_INFO("Cycle detection thread stopped");
+  }
+
+  auto LockPrepare(Transaction *txn, const RID &rid) -> bool;
+  std::list<LockManager::LockRequest>::iterator FindIterInRequestQueue(std::list<LockRequest> &request_queue, txn_id_t txn_id);
+  void check_aborted(Transaction *txn, LockRequestQueue* request_queue);
+  size_t getInsertIndex(std::vector<txn_id_t> &txns, txn_id_t target);
+  bool dfs(txn_id_t start_txn_id, std::unordered_set<txn_id_t> &visit, std::vector<txn_id_t> &path,
+                          std::unordered_set<txn_id_t> &path_set);
 
   /*
    * [LOCK_NOTE]: For all locking functions, we:
@@ -104,11 +123,40 @@ class LockManager {
    */
   auto Unlock(Transaction *txn, const RID &rid) -> bool;
 
+  /*** Graph API ***/
+  /**
+   * Adds edge t1->t2
+   */
+
+  /** Adds an edge from t1 -> t2. */
+  void AddEdge(txn_id_t t1, txn_id_t t2);
+
+  /** Removes an edge from t1 -> t2. */
+  void RemoveEdge(txn_id_t t1, txn_id_t t2);
+
+  /**
+   * Checks if the graph has a cycle, returning the newest transaction ID in the cycle if so.
+   * @param[out] txn_id if the graph has a cycle, will contain the newest transaction ID
+   * @return false if the graph has no cycle, otherwise stores the newest transaction ID in the cycle to txn_id
+   */
+  bool HasCycle(txn_id_t *txn_id);
+
+  /** @return the set of all edges in the graph, used for testing only! */
+  std::vector<std::pair<txn_id_t, txn_id_t>> GetEdgeList();
+
+  /** Runs cycle detection in the background. */
+  void RunCycleDetection();
+
  private:
   std::mutex latch_;
+  std::atomic<bool> enable_cycle_detection_;
+  std::thread *cycle_detection_thread_;
 
   /** Lock table for lock requests. */
   std::unordered_map<RID, LockRequestQueue> lock_table_;
+  /** Waits-for graph representation. */
+  std::unordered_map<txn_id_t, std::vector<txn_id_t>> waits_for_;
+  std::set<txn_id_t> txn_set_;
 };
 
 }  // namespace bustub

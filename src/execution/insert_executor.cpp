@@ -38,11 +38,25 @@ auto InsertExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   if (!plan_->IsRawInsert()) {
     while (child_->Next(tuple, rid)) {
       if (tuple != nullptr) {
+        if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
+          exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
+        }
+        if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
+          exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+        }
+
+        exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::INSERT,
+                                                                             *tuple, table_->table_.get()));
+
         table_->table_->InsertTuple(*tuple, rid, exec_ctx_->GetTransaction());
-      }
-      for (auto index : indexes) {
-        index->index_->InsertEntry(tuple->KeyFromTuple(table_->schema_, *index->index_->GetKeySchema(), index->index_->GetKeyAttrs()),
-                                   *rid, exec_ctx_->GetTransaction());
+
+        for (auto index: indexes) {
+          exec_ctx_->GetTransaction()->AppendIndexWriteRecord(IndexWriteRecord(*rid, table_->oid_, WType::INSERT,
+                                                                               *tuple, Tuple{}, index->index_oid_, exec_ctx_->GetCatalog()));
+          index->index_->InsertEntry(
+                  tuple->KeyFromTuple(table_->schema_, *index->index_->GetKeySchema(), index->index_->GetKeyAttrs()),
+                  *rid, exec_ctx_->GetTransaction());
+        }
       }
     }
     return false;
@@ -50,8 +64,19 @@ auto InsertExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
 
   for (auto value : plan_->RawValues()) {
     Tuple tup = Tuple(value, &table_->schema_);
+    if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
+      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
+    }
+    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
+      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+    }
+
+    exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::INSERT,
+                                                                         tup, table_->table_.get()));
     table_->table_->InsertTuple(tup, rid, exec_ctx_->GetTransaction());
     for (auto index : indexes) {
+      exec_ctx_->GetTransaction()->AppendIndexWriteRecord(IndexWriteRecord(*rid, table_->oid_, WType::INSERT,
+                                                                           tup, Tuple{}, index->index_oid_, exec_ctx_->GetCatalog()));
       index->index_->InsertEntry(tup.KeyFromTuple(table_->schema_, *index->index_->GetKeySchema(), index->index_->GetKeyAttrs()),
                                  *rid, exec_ctx_->GetTransaction());
     }

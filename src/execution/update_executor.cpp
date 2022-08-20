@@ -31,10 +31,22 @@ auto UpdateExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   while (child_executor_->Next(tuple, rid)) {
     if (tuple == nullptr) { continue; }
     auto new_tuple = GenerateUpdatedTuple(*tuple);
+    if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
+      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
+    }
+    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
+      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+    }
+
+    exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::UPDATE,
+                                                                         new_tuple, table_info_->table_.get()));
+
     table_info_->table_->UpdateTuple(new_tuple, *rid,
                                      exec_ctx_->GetTransaction());
     auto indexes = exec_ctx_->GetCatalog()->GetTableIndexes(table_info_->name_);
     for (auto index : indexes) {
+      exec_ctx_->GetTransaction()->AppendIndexWriteRecord(IndexWriteRecord(*rid, table_info_->oid_, WType::UPDATE,
+                                                                           new_tuple, *tuple, index->index_oid_, exec_ctx_->GetCatalog()));
       index->index_->DeleteEntry(
           tuple->KeyFromTuple(table_info_->schema_, *index->index_->GetKeySchema(),
                               index->index_->GetKeyAttrs()),
