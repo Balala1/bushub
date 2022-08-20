@@ -35,12 +35,15 @@ auto DeleteExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   auto indexes = exec_ctx_->GetCatalog()->GetTableIndexes(table_info_->name_);
   Tuple del_tup;
   RID del_rid;
+  auto lock_mgr = exec_ctx_->GetLockManager();
   while (child_executor_->Next(&del_tup, &del_rid)) {
-    if (exec_ctx_->GetTransaction()->IsSharedLocked(del_rid)) {
-      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), del_rid);
-    }
-    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(del_rid)) {
-      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), del_rid);
+    if (lock_mgr != nullptr) {
+      if (exec_ctx_->GetTransaction()->IsSharedLocked(del_rid)) {
+        lock_mgr->LockUpgrade(exec_ctx_->GetTransaction(), del_rid);
+      }
+      if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(del_rid)) {
+        lock_mgr->LockExclusive(exec_ctx_->GetTransaction(),del_rid);
+      }
     }
 
     exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(del_rid, WType::DELETE,

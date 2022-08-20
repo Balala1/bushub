@@ -35,14 +35,18 @@ void InsertExecutor::Init() {
 auto InsertExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   auto indexes = exec_ctx_->GetCatalog()->GetTableIndexes(table_->name_);
 
+  auto lock_mgr = exec_ctx_->GetLockManager();
+  auto txn = exec_ctx_->GetTransaction();
   if (!plan_->IsRawInsert()) {
     while (child_->Next(tuple, rid)) {
       if (tuple != nullptr) {
-        if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
-          exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
-        }
-        if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
-          exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+        if (lock_mgr != nullptr) {
+          if (txn->IsSharedLocked(*rid)) {
+            lock_mgr->LockUpgrade(txn, *rid);
+          }
+          if (!txn->IsExclusiveLocked(*rid)) {
+            lock_mgr->LockExclusive(txn, *rid);
+          }
         }
 
         exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::INSERT,
@@ -64,11 +68,13 @@ auto InsertExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
 
   for (auto value : plan_->RawValues()) {
     Tuple tup = Tuple(value, &table_->schema_);
-    if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
-      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
-    }
-    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
-      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+    if (lock_mgr != nullptr) {
+      if (txn->IsSharedLocked(*rid)) {
+        lock_mgr->LockUpgrade(txn, *rid);
+      }
+      if (!txn->IsExclusiveLocked(*rid)) {
+        lock_mgr->LockExclusive(txn, *rid);
+      }
     }
 
     exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::INSERT,

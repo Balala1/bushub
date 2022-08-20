@@ -31,11 +31,15 @@ auto UpdateExecutor::Next([[maybe_unused]] Tuple *tuple, RID *rid) -> bool {
   while (child_executor_->Next(tuple, rid)) {
     if (tuple == nullptr) { continue; }
     auto new_tuple = GenerateUpdatedTuple(*tuple);
-    if (exec_ctx_->GetTransaction()->IsSharedLocked(*rid)) {
-      exec_ctx_->GetLockManager()->LockUpgrade(exec_ctx_->GetTransaction(), *rid);
-    }
-    if (!exec_ctx_->GetTransaction()->IsExclusiveLocked(*rid)) {
-      exec_ctx_->GetLockManager()->LockExclusive(exec_ctx_->GetTransaction(), *rid);
+    auto lock_mgr = exec_ctx_->GetLockManager();
+    auto txn = exec_ctx_->GetTransaction();
+    if (lock_mgr != nullptr) {
+      if (txn->IsSharedLocked(*rid)) {
+        lock_mgr->LockUpgrade(txn, *rid);
+      }
+      if (!txn->IsExclusiveLocked(*rid)) {
+        lock_mgr->LockExclusive(txn, *rid);
+      }
     }
 
     exec_ctx_->GetTransaction()->AppendTableWriteRecord(TableWriteRecord(*rid, WType::UPDATE,

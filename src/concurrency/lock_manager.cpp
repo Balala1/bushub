@@ -51,11 +51,11 @@ void LockManager::check_aborted(Transaction *txn, LockRequestQueue* request_queu
 auto LockManager::LockShared(Transaction *txn, const RID &rid) -> bool {
   std::unique_lock<std::mutex> lock(latch_);
 
-//  if (txn->GetIsolationLevel() == IsolationLevel::READ_UNCOMMITTED) {
-//    txn->SetState(TransactionState::ABORTED);
-//    throw TransactionAbortException(txn->GetTransactionId(), AbortReason::LOCKSHARED_ON_READ_UNCOMMITTED);
-//    return false;
-//  }
+  if (txn->GetIsolationLevel() == IsolationLevel::READ_UNCOMMITTED) {
+    txn->SetState(TransactionState::ABORTED);
+    throw TransactionAbortException(txn->GetTransactionId(), AbortReason::LOCKSHARED_ON_READ_UNCOMMITTED);
+    return false;
+  }
 
   if (!LockPrepare(txn, rid)) {
     return false;

@@ -31,14 +31,26 @@ auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool {
     return false;
   }
 
-  table_->table_->GetTuple((*iter_).second, tuple, exec_ctx_->GetTransaction());
+  auto lock_mgr = exec_ctx_->GetLockManager();
+  auto txn = exec_ctx_->GetTransaction();
+  if (lock_mgr != nullptr && txn->GetIsolationLevel() != IsolationLevel::READ_UNCOMMITTED) {
+    lock_mgr->LockShared(txn, (*iter_).second);
+  }
+
+  table_->table_->GetTuple((*iter_).second, tuple, txn);
   if (plan_->GetPredicate() != nullptr &&
       !plan_->GetPredicate()->Evaluate(tuple, plan_->OutputSchema()).GetAs<bool>()) {
+    if (lock_mgr != nullptr) {
+      lock_mgr->Unlock(txn, (*iter_).second);
+    }
     ++iter_;
     return false;
   }
 
   *rid = (*iter_).second;
+  if (lock_mgr != nullptr && txn->GetIsolationLevel() == IsolationLevel::READ_COMMITTED) {
+    lock_mgr->Unlock(txn, (*iter_).second);
+  }
   ++iter_;
   return true;
 }

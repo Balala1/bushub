@@ -30,15 +30,24 @@ void SeqScanExecutor::Init() {
 }
 
 auto SeqScanExecutor::Next(Tuple *tuple, RID *rid) -> bool {
+  auto lock_mgr = exec_ctx_->GetLockManager();
   while (iter_ != table_->table_->End()) {
-    exec_ctx_->GetLockManager()->LockShared(exec_ctx_->GetTransaction(), *iter_->GetRid());
+    if (lock_mgr != nullptr && exec_ctx_->GetTransaction()->GetIsolationLevel() != IsolationLevel::READ_UNCOMMITTED) {
+      lock_mgr->LockShared(exec_ctx_->GetTransaction(), iter_->GetRid());
+    }
 
     if (plan_->GetPredicate() == nullptr ||
         plan_->GetPredicate()->Evaluate(&*iter_, plan_->OutputSchema()).GetAs<bool>()) {
       *tuple = *iter_;
       *rid = tuple->GetRid();
+      if (lock_mgr != nullptr && exec_ctx_->GetTransaction()->GetIsolationLevel() == IsolationLevel::READ_COMMITTED) {
+        lock_mgr->Unlock(exec_ctx_->GetTransaction(), iter_->GetRid());
+      }
       iter_++;
       return true;
+    }
+    if (lock_mgr != nullptr) {
+      lock_mgr->Unlock(exec_ctx_->GetTransaction(), iter_->GetRid());
     }
     iter_++;
   }
